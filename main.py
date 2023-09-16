@@ -24,7 +24,7 @@ for i in range(len(basic_list)):
         sum_of_even_num += basic_list[i]
     if basic_list[i] % 2 != 0:
         sum_of_odd_num += basic_list[i]
-    if i % 3 == 0:
+    if i % 3 == 0 and i != 0:
         multiplication_of_3 *= basic_list[i]
 
 for i in range(index_of_min, index_of_max + 1):
@@ -37,14 +37,13 @@ for i in range(len(basic_list)):
 
 for i in range(len(basic_list) - 1, 0, - 1):
     if basic_list[i] > 0:
-        print(basic_list[i])
         index_of_last_positive_num = i
         break
 
 for i in range(index_of_first_positive_num, index_of_last_positive_num + 1):
     sum_of_elements_between_first_and_last_positive += basic_list[i]
 
-
+print(basic_list)
 print("Сумма негативных чисел ", sum_of_negative_num)
 print("Сумма парных чисел ", sum_of_even_num)
 print("Сумма непарных чисел ", sum_of_odd_num)
