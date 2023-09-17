@@ -50,3 +50,32 @@ print("Сумма непарных чисел ", sum_of_odd_num)
 print("Произведение элементов с индексом кратным 3 ", multiplication_of_3)
 print("произведение элементов между минимальным и максимальным числом ", multiplication_between_min_max)
 print("Сумма элементов между первы и последним позитивным числом ", sum_of_elements_between_first_and_last_positive)
+
+
+
+###############
+
+
+basic_list_task_2 = [randint(-100, 100) for i in range(15)]
+
+print(basic_list_task_2)
+
+only_even_list = []
+only_odd_list = []
+only_positive_list = []
+only_negative_list = []
+
+for i in basic_list_task_2:
+    if i % 2 == 0:
+        only_even_list.append(i)
+    if i % 2 != 0:
+        only_odd_list.append(i)
+    if i > 0:
+        only_positive_list.append(i)
+    if i < 0:
+        only_negative_list.append(i)
+
+print("Список четных чисел ", only_even_list)
+print("Список нечетных чисел ", only_odd_list)
+print("Список положительных чисел ", only_positive_list)
+print("Список отрицательных чисел ", only_negative_list)
